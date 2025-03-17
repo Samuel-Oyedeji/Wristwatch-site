@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background-color: #02231c;
+}
+
+/* Header styles */
+header {
+    background-color: #004d25;
+    color: #91f086;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #11823b;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: #91f086;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #48bf53;
+    color: #004d25;
+    border-radius: 5px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #91f086;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Collection section styles */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection div {
+    background-color: #004d25;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.collection div:hover {
+    transform: translateY(-10px);
+}
+
+.collection img {
+    width: 100%;
+    height: auto;
+}
+
+.collection h3 {
+    padding: 10px 0;
+    font-size: 1.5em;
+    color: #91f086;
+}
+
+.collection p {
+    padding: 0 15px 15px;
+    color: #f0f0f0;
+    font-size: 1em;
+    line-height: 1.5;
+}

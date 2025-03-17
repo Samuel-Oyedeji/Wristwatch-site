@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Timeless Elegance</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="collection">Collection</a>
+            <a href="about-us">About</a>
+            <a href="contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with any questions or feedback.</p>
+    </section>
+
+    <section class="contact-form">
+        <form>              <!-- this is what was there before - <form action="#" method="POST"> -->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button onclick="messageAlert()">Send Message</button>            <!--  <button type="submit">Send Message</button>  -->
+        </form>
+    </section>
+    <script>
+        function messageAlert() {
+            alert('Thank you for the feedback!');
+            // You can replace the alert with redirection or other functionality
+            // e.g., window.location.href = 'feedback.html';
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 Timeless Elegance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
